@@ -47,7 +47,7 @@ export function FormProject() {
           <h2 className={styles.title}>Preencha seu cadastro:</h2>
           <label htmlFor="nameProject">Nome do projeto:</label>
           <input
-            maxlength="32"
+            maxLength="32"
             id="nameProject"
             placeholder="Nome do projeto"
             name="nameProject"
@@ -56,7 +56,7 @@ export function FormProject() {
           />
           <label htmlFor="area">Qual o segmento do seu projeto?</label>
           <input
-            maxlength="32"
+            maxLength="32"
             id="area"
             placeholder="Segmento"
             name="area"
@@ -65,7 +65,7 @@ export function FormProject() {
           />
           <label htmlFor="description">Descrição do projeto:</label>
           <input
-            maxlength="64"
+            maxLength="64"
             id="Descrição"
             placeholder="Uma breve descrição"
             name="description"
@@ -95,7 +95,7 @@ export function FormProject() {
             Conte um pouco sobre os detalhes do seu Projeto:
           </label>
           <input
-            maxlength="128"
+            maxLength="128"
             id="details"
             placeholder="Detalhes do Projeto"
             name="details"
@@ -105,7 +105,7 @@ export function FormProject() {
           />
           <label htmlFor="contact">Contato:</label>
           <input
-            maxlength="64"
+            maxLength="64"
             id="contact"
             placeholder="Endereço de e-mail ou Telefone"
             name="contact"

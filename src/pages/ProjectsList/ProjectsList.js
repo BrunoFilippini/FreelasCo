@@ -1,7 +1,7 @@
-import styles from "./Projects.module.css";
-import { CardProject } from "../../components/CardProjects/CardProjects";
-import { useState, useEffect } from "react";
 import axios from "axios";
+import styles from "./Projects.module.css";
+import { useState, useEffect } from "react";
+import { CardProject } from "../../components/CardProjects/CardProjects";
 import { SearchBar } from "../../components/SearchBar/SearchBar";
 
 export function Projects() {
@@ -52,12 +52,14 @@ export function Projects() {
 
   return (
     <div className={styles.main}>
-      <h1 className={styles.h1Free}>Projects</h1>
-      <SearchBar
-        placeholder="Procure pelo Nome do Projeto, Descrição ou Área"
-        filterAPI={filterProject}
-      />
-      <div className={styles["grid-container"]}>
+      <div className={styles.handleNavBar}>
+        <p className={styles.titleProject}>Procure por Projetos!</p>
+        <SearchBar
+          placeholder="  Procure pelo nome do Projeto, Descrição ou Área"
+          filterAPI={filterProject}
+        />
+      </div>
+      <div className={styles.gridContainer}>
         {Project.map((currentProject) => {
           return (
             <CardProject

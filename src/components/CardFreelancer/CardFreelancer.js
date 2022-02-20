@@ -21,7 +21,11 @@ export function CardFreelancer(props) {
           <div className={styles.cardFront}>
             <figure>
               <div className={styles.imgBg}></div>
-              <img src={props.img} alt={`Foto de ${props.name}`} />
+              <img
+                className={styles.imgSize}
+                src={props.img}
+                alt={`Foto de ${props.name}`}
+              />
               <figcaption>{props.name}</figcaption>
             </figure>
 
@@ -36,6 +40,7 @@ export function CardFreelancer(props) {
             <figure>
               <div className={styles.imgBg}></div>
               <img
+                className={styles.imgSize}
                 src="https://img.freepik.com/free-photo/old-black-background-grunge-texture-dark-wallpaper-blackboard-chalkboard-room-wall_1258-28312.jpg"
                 alt="Brohm Lake"
               />

@@ -1,7 +1,7 @@
-import styles from "./Freelancers.module.css";
-import { CardFreelancer } from "../../components/CardFreelancer/CardFreelancer";
-import { useState, useEffect } from "react";
 import axios from "axios";
+import styles from "./Freelancers.module.css";
+import { useState, useEffect } from "react";
+import { CardFreelancer } from "../../components/CardFreelancer/CardFreelancer";
 import { SearchBar } from "../../components/SearchBar/SearchBar";
 
 export function Freelancers() {
@@ -52,17 +52,19 @@ export function Freelancers() {
 
   return (
     <div className={styles.main}>
-      <h1 className={styles.h1Free}>Freelancers</h1>
-      <SearchBar
-        placeholder="  Procure por Profissão, Habilidades ou Formação"
-        filterAPI={filterFreelancer}
-      />
-      <div className={styles["grid-container"]}>
+      <div className={styles.handleNavBar}>
+        <p className={styles.titleFreelancers}>Procure por Freelancers!</p>
+        <SearchBar
+          placeholder="  Procure por Profissão, Habilidades ou Formação"
+          filterAPI={filterFreelancer}
+        />
+      </div>
+      <div className={styles.gridContainer}>
         {freelancer.map((currentFreelancer) => {
           return (
             <CardFreelancer
-              setRerender={setRerender}
               key={currentFreelancer._id}
+              setRerender={setRerender}
               id={currentFreelancer._id}
               name={currentFreelancer.name}
               profession={currentFreelancer.profession}

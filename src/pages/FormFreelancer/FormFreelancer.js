@@ -49,7 +49,7 @@ export function FormFreelancer() {
           <h2 className={styles.title}>Preencha seu cadastro:</h2>
           <label htmlFor="freelancerName">Nome: </label>
           <input
-            maxlength="32"
+            maxLength="32"
             id="freelancerName"
             placeholder="Seu nome"
             name="name"
@@ -58,7 +58,7 @@ export function FormFreelancer() {
           />
           <label htmlFor="profession">Profissão:</label>
           <input
-            maxlength="32"
+            maxLength="32"
             id="profession"
             placeholder="Sua profissão"
             name="profession"
@@ -67,7 +67,7 @@ export function FormFreelancer() {
           />
           <label htmlFor="branding">Uma breve descrição sobre você:</label>
           <input
-            maxlength="128"
+            maxLength="128"
             placeholder="Descrição sobre você"
             id="branding"
             name="branding"
@@ -76,7 +76,7 @@ export function FormFreelancer() {
           />
           <label htmlFor="education">Sua formação:</label>
           <input
-            maxlength="128"
+            maxLength="128"
             placeholder="Sua formação"
             id="education"
             name="education"
@@ -87,7 +87,7 @@ export function FormFreelancer() {
             Conte um pouco sobre seus trabalhos anteriores:
           </label>
           <input
-            maxlength="128"
+            maxLength="128"
             placeholder="Uma breve descrição dos trabalhos que participou"
             id="recentProjects"
             name="recentProjects"
@@ -98,11 +98,10 @@ export function FormFreelancer() {
             Quais são as suas principais habilidades?
           </label>
           <input
-            maxlength="128"
+            maxLength="128"
             placeholder="Suas habilidades técnicas"
             id="skills"
             name="skills"
-            maxLength={50}
             type="text"
             value={form.skills}
             onChange={handleChange}
@@ -111,7 +110,7 @@ export function FormFreelancer() {
             Quais são seus interesses e objetivos futuros?
           </label>
           <input
-            maxlength="64"
+            maxLength="64"
             placeholder="Interesses e objetivos futuros"
             id="interest"
             name="interest"
@@ -120,7 +119,7 @@ export function FormFreelancer() {
           />
           <label htmlFor="contact">Seu contato:</label>
           <input
-            maxlength="64"
+            maxLength="64"
             placeholder="Endereço de e-mail ou Telefone"
             id="contact"
             name="contact"

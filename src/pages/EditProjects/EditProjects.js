@@ -63,7 +63,7 @@ export function EditProject() {
           <h2 className={styles.title}>Atualize seu cadastro:</h2>
           <label htmlFor="nameProject">Nome do projeto:</label>
           <input
-            maxlength="32"
+            maxLength="32"
             id="nameProject"
             placeholder="Project Name"
             name="nameProject"
@@ -72,7 +72,7 @@ export function EditProject() {
           />
           <label htmlFor="area">Segmento</label>
           <input
-            maxlength="32"
+            maxLength="32"
             id="area"
             placeholder="segmento"
             name="area"
@@ -81,7 +81,7 @@ export function EditProject() {
           />
           <label htmlFor="description">Descrição</label>
           <input
-            maxlength="64"
+            maxLength="64"
             id="description"
             placeholder="Breve descrição"
             name="description"
@@ -110,18 +110,17 @@ export function EditProject() {
           />
           <label htmlFor="details">Detalhamento</label>
           <input
-            maxlength="128"
+            maxLength="128"
             id="details"
             placeholder="Detalhe aqui sua vaga"
             name="details"
-            maxLength={50}
             type="text"
             value={form.details}
             onChange={handleChange}
           />
           <label htmlFor="contact">Contato:</label>
           <input
-            maxlength="64"
+            maxLength="64"
             id="contact"
             placeholder="Endereço de e-mail"
             name="contact"
