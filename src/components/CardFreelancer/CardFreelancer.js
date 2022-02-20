@@ -18,7 +18,7 @@ export function CardFreelancer(props) {
 
   return (
     <>
-      <div
+      {/*      <div
         className={`${styles.profile} ${
           expanded ? styles["profile--expanded"] : styles["profile--unexpanded"]
         }`}
@@ -81,6 +81,58 @@ export function CardFreelancer(props) {
               Deletar Perfil
             </button>
           </span>
+        </div>
+      </div> */}
+
+      {/* TESTE CARD */}
+
+      <div className={styles.flipCardContainer}>
+        <div className={styles.flipCard}>
+          <div className={styles.cardFront}>
+            <figure>
+              <div className={styles.imgBg}></div>
+              <img src={props.img} alt={`Foto de ${props.name}`} />
+              <figcaption>{props.name}</figcaption>
+            </figure>
+
+            <ul className={styles.ulDescriptionFront}>
+              <li>{props.profession}</li>
+
+              <li>{props.branding}</li>
+            </ul>
+          </div>
+
+          <div className={styles.cardBack}>
+            <figure>
+              <div className={styles.imgBg}></div>
+              <img
+                src="https://img.freepik.com/free-photo/old-black-background-grunge-texture-dark-wallpaper-blackboard-chalkboard-room-wall_1258-28312.jpg"
+                alt="Brohm Lake"
+              />
+            </figure>
+
+            <ul className={styles.ulDescriptionBack}>
+              <li>
+                <b>Formação: </b>
+                {props.education}
+              </li>
+              <li>
+                <b>Projetos recentes: </b>
+                {props.recentProjects}
+              </li>
+              <li>
+                <b>Habilidades: </b>
+                {props.skills}
+              </li>
+              <li>
+                <b>Interesses: </b>
+                {props.interest}
+              </li>
+              <li>
+                <b>Contato: </b> {props.contact}
+              </li>
+            </ul>
+          </div>
         </div>
       </div>
     </>
