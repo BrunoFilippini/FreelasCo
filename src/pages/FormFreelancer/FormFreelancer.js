@@ -36,7 +36,7 @@ export function FormFreelancer() {
 
     try {
       await axios.post("https://ironrest.herokuapp.com/giglandFreelas", form);
-      navigate(`/Employers`);
+      navigate(`/Projects`);
     } catch (error) {
       console.error(error);
     }
@@ -108,7 +108,6 @@ export function FormFreelancer() {
             maxlength="64"
             id="interest"
             name="interest"
-            
             value={form.interest}
             onChange={handleChange}
           />

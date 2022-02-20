@@ -1,9 +1,9 @@
 import { useState } from "react";
 import axios from "axios";
 import { Link } from "react-router-dom";
-import styles from "./CardEmployer.module.css";
+import styles from "./CardProjects.module.css";
 
-export function CardEmployer(props) {
+export function CardProject(props) {
   const [expanded, setExpanded] = useState(false);
 
   async function handleDelete() {
@@ -61,7 +61,7 @@ export function CardEmployer(props) {
               <b>Contact: </b>
               {props.contact}
             </p>
-            <Link className={styles.textLink} to={`/edit-employer/${props.id}`}>
+            <Link className={styles.textLink} to={`/edit-Project/${props.id}`}>
               <button type="button" className={styles.btn}>
                 Editar Perfil
               </button>

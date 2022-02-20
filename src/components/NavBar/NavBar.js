@@ -40,7 +40,7 @@ export function NavBar() {
 
         <div className={styles.alignmentButton}>
           <div className={styles.buttonsLinksListsProjects}>
-            <Link to="/Employers">
+            <Link to="/Projects">
               <button>
                 <span>Projetos</span>
               </button>
@@ -48,7 +48,7 @@ export function NavBar() {
           </div>
 
           <div className={styles.buttonsLinksFormProjects}>
-            <Link to="/FormEmployer">
+            <Link to="/FormProject">
               <button>
                 <span>Cadastre seu Projeto</span>
               </button>

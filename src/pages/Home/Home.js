@@ -22,8 +22,8 @@ export function Home() {
             <p>
               Veja os Projetos <br /> disponíveis !
             </p>
-            <Link to="/Employers">
-              <span className={styles.btnEmployer}>Projetos</span>
+            <Link to="/Projects">
+              <span className={styles.btnProject}>Projetos</span>
             </Link>
           </div>
         </div>

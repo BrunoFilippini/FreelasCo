@@ -106,7 +106,7 @@
 
   /*  Button Emplyer */
 
-  .btnEmployer {
+  .btnProject {
     background: rgb(27, 158, 245);
     background: linear-gradient(
       0deg,
@@ -126,11 +126,11 @@
     display: flex;
   }
 
-  .btnEmployer:hover {
+  .btnProject:hover {
     box-shadow: 1px 1px 25px 10px rgba(57, 205, 250, 0.4);
   }
 
-  .btnEmployer:before {
+  .btnProject:before {
     content: "";
     position: absolute;
     top: 0;
@@ -146,7 +146,7 @@
     transition: all 650ms;
   }
 
-  .btnEmployer:hover:before {
+  .btnProject:hover:before {
     left: 100%;
   }
 

@@ -1,11 +1,13 @@
-import styles from "./FormEmployer.module.css";
-import { useState } from "react";
+import styles from "./EditProjects.module.css";
 import axios from "axios";
-import { useNavigate } from "react-router-dom";
-import formProjectsImg from "../../assets/projectImg.png";
+import { useState } from "react";
+import { useParams, useNavigate } from "react-router-dom";
+import { useEffect } from "react";
 
-export function FormEmployer() {
-  const goTo = useNavigate();
+export function EditProject() {
+  const params = useParams();
+  const navigate = useNavigate();
+
   const [form, setForm] = useState({
     nameProject: "",
     area: "",
@@ -17,12 +19,25 @@ export function FormEmployer() {
     img: "",
   });
 
+  useEffect(() => {
+    async function fetchProject() {
+      try {
+        const response = await axios.get(
+          `https://ironrest.herokuapp.com/giglandGigs/${params.id}`
+        );
+        setForm({ ...response.data });
+      } catch (error) {
+        console.error(error);
+      }
+    }
+    fetchProject();
+  }, [params.id]);
+
   function handleChange(event) {
     setForm({ ...form, [event.target.name]: event.target.value });
-    console.log(form);
   }
 
-  async function handleSubmit(event) {
+  function handleSubmit(event) {
     event.preventDefault();
 
     for (let key in form) {
@@ -32,19 +47,20 @@ export function FormEmployer() {
       }
     }
 
-    try {
-      axios.post("https://ironrest.herokuapp.com/giglandGigs", form);
-      goTo(`/Freelancers`);
-    } catch (error) {
-      console.error(error);
-    }
+    delete form._id;
+    axios
+      .put(`https://ironrest.herokuapp.com/giglandGigs/${params.id}`, form)
+      .then((result) => navigate(`/Projects`))
+      .catch((error) => {
+        console.error(error);
+      });
   }
 
   return (
     <div className={styles.divPage}>
       <form onSubmit={handleSubmit}>
         <div className={styles.form}>
-          <h2 className={styles.title}>Preencha seu cadastro:</h2>
+          <h2 className={styles.title}>Atualize seu cadastro:</h2>
           <label htmlFor="nameProject">Nome do projeto:</label>
           <input
             maxlength="32"
@@ -98,6 +114,7 @@ export function FormEmployer() {
             id="details"
             placeholder="Detalhe aqui sua vaga"
             name="details"
+            maxLength={50}
             type="text"
             value={form.details}
             onChange={handleChange}
@@ -114,15 +131,10 @@ export function FormEmployer() {
           <label htmlFor="img">Link para logo ou imagem de seu projeto:</label>
           <input id="img" name="img" value={form.img} onChange={handleChange} />
           <button type="submit">
-            <span>Cadastre seu Projeto!</span>
+            <span>Editar Projeto</span>
           </button>
         </div>
       </form>
-      <img
-        src={formProjectsImg}
-        className={styles.formImg}
-        alt="img ilustrativa formulário"
-      />
     </div>
   );
 }
