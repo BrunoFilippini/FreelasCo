@@ -11,7 +11,7 @@ export function Home() {
         <div className={styles.buttons}>
           <div className={styles.text}>
             <p>
-              Veja os Projetos <br /> disponíveis !
+              Veja os Freelancers <br /> disponíveis !
             </p>
             <Link to="/Freelancers">
               <span className={styles.btnFreelancer}>Freelancers</span>
