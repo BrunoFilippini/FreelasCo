@@ -18,7 +18,6 @@ export function Freelancers() {
         setFreelancer([...result.data]);
 
         setBackup([...result.data]);
-
       } catch (error) {
         console.error(error);
       }
@@ -34,43 +33,49 @@ export function Freelancers() {
       return;
     }
 
-  
     const filtered = freelancer.filter((currentFreelancer) => {
-      return currentFreelancer.profession.toLowerCase().includes(searchParams.toLowerCase()) || currentFreelancer.skills.toLowerCase().includes(searchParams.toLowerCase()) || currentFreelancer.education.toLowerCase().includes(searchParams.toLowerCase())
-    }
- 
-    );
+      return (
+        currentFreelancer.profession
+          .toLowerCase()
+          .includes(searchParams.toLowerCase()) ||
+        currentFreelancer.skills
+          .toLowerCase()
+          .includes(searchParams.toLowerCase()) ||
+        currentFreelancer.education
+          .toLowerCase()
+          .includes(searchParams.toLowerCase())
+      );
+    });
 
-  
     setFreelancer(filtered);
-  
-   
-    
   }
 
   return (
     <div className={styles.main}>
       <h1 className={styles.h1Free}>Freelancers</h1>
-      <SearchBar placeholder="Find talent" filterAPI={filterFreelancer} />
+      <SearchBar
+        placeholder="  Procure por Profissão, Habilidades ou Formação"
+        filterAPI={filterFreelancer}
+      />
       <div className={styles["grid-container"]}>
-      {freelancer.map((currentFreelancer) => {
-        return (
-          <CardFreelancer
-            setRerender={setRerender}
-            key={currentFreelancer._id}
-            id={currentFreelancer._id}
-            name={currentFreelancer.name}
-            profession={currentFreelancer.profession}
-            branding={currentFreelancer.branding}
-            education={currentFreelancer.education}
-            recentProjects={currentFreelancer.recentProjects}
-            skills={currentFreelancer.skills}
-            interest={currentFreelancer.interest}
-            contact={currentFreelancer.contact}
-            img={currentFreelancer.img}
-          />
-        );
-      })}
+        {freelancer.map((currentFreelancer) => {
+          return (
+            <CardFreelancer
+              setRerender={setRerender}
+              key={currentFreelancer._id}
+              id={currentFreelancer._id}
+              name={currentFreelancer.name}
+              profession={currentFreelancer.profession}
+              branding={currentFreelancer.branding}
+              education={currentFreelancer.education}
+              recentProjects={currentFreelancer.recentProjects}
+              skills={currentFreelancer.skills}
+              interest={currentFreelancer.interest}
+              contact={currentFreelancer.contact}
+              img={currentFreelancer.img}
+            />
+          );
+        })}
       </div>
     </div>
   );

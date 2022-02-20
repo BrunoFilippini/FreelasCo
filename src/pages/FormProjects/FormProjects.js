@@ -49,54 +49,55 @@ export function FormProject() {
           <input
             maxlength="32"
             id="nameProject"
-            placeholder="Project Name"
+            placeholder="Nome do projeto"
             name="nameProject"
             value={form.nameProject}
             onChange={handleChange}
           />
-          <label htmlFor="area">Segmento</label>
+          <label htmlFor="area">Qual o segmento do seu projeto?</label>
           <input
             maxlength="32"
             id="area"
-            placeholder="segmento"
+            placeholder="Segmento"
             name="area"
             value={form.area}
             onChange={handleChange}
           />
-          <label htmlFor="description">Descrição</label>
+          <label htmlFor="description">Descrição do projeto:</label>
           <input
             maxlength="64"
-            id="description"
-            placeholder="Breve descrição"
+            id="Descrição"
+            placeholder="Uma breve descrição"
             name="description"
             value={form.description}
             onChange={handleChange}
           />
-          <label htmlFor="startDate">Data</label>
+          <label htmlFor="startDate">Data de início:</label>
           <input
             id="startDate"
             type="date"
-            placeholder="Data"
             name="startDate"
             value={form.startDate}
             onChange={handleChange}
           />
-          <label htmlFor="budget">Orçamento</label>
+          <label htmlFor="budget">Qual seu Budget?</label>
           <input
             id="budget"
-            placeholder="US$0,00"
-            name="budget"
+            placeholder="R$ 0,00"
+            name="Budget"
             type="number"
             step="0.01"
             min="1"
             value={form.budget}
             onChange={handleChange}
           />
-          <label htmlFor="details">Detalhamento</label>
+          <label htmlFor="details">
+            Conte um pouco sobre os detalhes do seu Projeto:
+          </label>
           <input
             maxlength="128"
             id="details"
-            placeholder="Detalhe aqui sua vaga"
+            placeholder="Detalhes do Projeto"
             name="details"
             type="text"
             value={form.details}
@@ -106,13 +107,19 @@ export function FormProject() {
           <input
             maxlength="64"
             id="contact"
-            placeholder="Endereço de e-mail"
+            placeholder="Endereço de e-mail ou Telefone"
             name="contact"
             value={form.contact}
             onChange={handleChange}
           />
           <label htmlFor="img">Link para logo ou imagem de seu projeto:</label>
-          <input id="img" name="img" value={form.img} onChange={handleChange} />
+          <input
+            id="img"
+            name="img"
+            placeholder="URL da imagem do Projeto"
+            value={form.img}
+            onChange={handleChange}
+          />
           <button type="submit">
             <span>Cadastre seu Projeto!</span>
           </button>

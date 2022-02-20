@@ -51,6 +51,7 @@ export function FormFreelancer() {
           <input
             maxlength="32"
             id="freelancerName"
+            placeholder="Seu nome"
             name="name"
             value={form.name}
             onChange={handleChange}
@@ -59,6 +60,7 @@ export function FormFreelancer() {
           <input
             maxlength="32"
             id="profession"
+            placeholder="Sua profissão"
             name="profession"
             onChange={handleChange}
             value={form.profession}
@@ -66,6 +68,7 @@ export function FormFreelancer() {
           <label htmlFor="branding">Uma breve descrição sobre você:</label>
           <input
             maxlength="128"
+            placeholder="Descrição sobre você"
             id="branding"
             name="branding"
             value={form.branding}
@@ -74,6 +77,7 @@ export function FormFreelancer() {
           <label htmlFor="education">Sua formação:</label>
           <input
             maxlength="128"
+            placeholder="Sua formação"
             id="education"
             name="education"
             value={form.education}
@@ -84,6 +88,7 @@ export function FormFreelancer() {
           </label>
           <input
             maxlength="128"
+            placeholder="Uma breve descrição dos trabalhos que participou"
             id="recentProjects"
             name="recentProjects"
             value={form.recentProjects}
@@ -94,6 +99,7 @@ export function FormFreelancer() {
           </label>
           <input
             maxlength="128"
+            placeholder="Suas habilidades técnicas"
             id="skills"
             name="skills"
             maxLength={50}
@@ -106,6 +112,7 @@ export function FormFreelancer() {
           </label>
           <input
             maxlength="64"
+            placeholder="Interesses e objetivos futuros"
             id="interest"
             name="interest"
             value={form.interest}
@@ -114,6 +121,7 @@ export function FormFreelancer() {
           <label htmlFor="contact">Seu contato:</label>
           <input
             maxlength="64"
+            placeholder="Endereço de e-mail ou Telefone"
             id="contact"
             name="contact"
             value={form.contact}
@@ -121,7 +129,13 @@ export function FormFreelancer() {
           />
 
           <label htmlFor="img">Link da foto para seu perfil:</label>
-          <input id="img" name="img" value={form.img} onChange={handleChange} />
+          <input
+            id="img"
+            placeholder="URL da sua foto de Perfil"
+            name="img"
+            value={form.img}
+            onChange={handleChange}
+          />
           <button type="submit">
             <span>Cadastre seu Perfil !</span>
           </button>

@@ -38,7 +38,12 @@ export function Projects() {
         currentProject.area
           .toLowerCase()
           .includes(searchParams.toLowerCase()) ||
-        currentProject.budget.toLowerCase().includes(searchParams.toLowerCase())
+        currentProject.description
+          .toLowerCase()
+          .includes(searchParams.toLowerCase()) ||
+        currentProject.nameProject
+          .toLowerCase()
+          .includes(searchParams.toLowerCase())
       );
     });
 
@@ -48,7 +53,10 @@ export function Projects() {
   return (
     <div className={styles.main}>
       <h1 className={styles.h1Free}>Projects</h1>
-      <SearchBar placeholder="Find a gig" filterAPI={filterProject} />
+      <SearchBar
+        placeholder="Procure pelo Nome do Projeto, Descrição ou Área"
+        filterAPI={filterProject}
+      />
       <div className={styles["grid-container"]}>
         {Project.map((currentProject) => {
           return (

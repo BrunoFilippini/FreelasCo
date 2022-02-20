@@ -47,18 +47,18 @@ export function CardProject(props) {
         <div className={styles.profileData}>
           <span className={styles.profileDataFollowing}>
             <p className={styles.profileDataStartDate}>
-              <b>Start date: </b>
+              <b>Data de início: </b>
               {props.startDate}
             </p>
             <p className={styles.profileDataBudget}>
-              <b>Compensation: </b> ${props.budget}
+              <b>Budget: </b> ${props.budget}
             </p>
             <p className={styles.profileDataStartDetails}>
-              <b>Details: </b>
+              <b>Detalhes: </b>
               {props.details}
             </p>
             <p className={styles.profileDataContact}>
-              <b>Contact: </b>
+              <b>Contato: </b>
               {props.contact}
             </p>
             <Link className={styles.textLink} to={`/edit-Project/${props.id}`}>

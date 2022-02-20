@@ -50,23 +50,23 @@ export function CardFreelancer(props) {
         <div className={styles.profileData}>
           <span className={styles.profileDataFollowing}>
             <p className={styles.profileDataStartDate}>
-              <b>Education: </b>
+              <b>Formação: </b>
               {props.education}
             </p>
             <p className={styles.profileDataBudget}>
-              <b>Recent projects: </b>
+              <b>Projetos recentes: </b>
               {props.recentProjects}
             </p>
             <p className={styles.profileDataStartDetails}>
-              <b>Skills: </b>
+              <b>Habilidades: </b>
               {props.skills}
             </p>
             <p className={styles.profileDataStartDetails}>
-              <b>Interests: </b>
+              <b>Interesses: </b>
               {props.interest}
             </p>
             <p className={styles.profileDataContact}>
-              <b>Contact: </b> {props.contact}
+              <b>Contato: </b> {props.contact}
             </p>
             <Link
               className={styles.textLink}
