@@ -1,0 +1,169 @@
+@import url("https://fonts.googleapis.com/css2?family=Chewy&display=swap");
+@media screen and (min-width: 1200px) {
+  .noShow {
+    display: none;
+  }
+
+  .navBarAll {
+    background-color: black;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  .freelasLogo {
+    width: 180px;
+  }
+
+  .alignmentButton {
+    display: flex;
+    margin: 0px 20px;
+  }
+
+  .buttonsLinksListsFreelas {
+    padding-right: 10px;
+  }
+
+  .buttonsLinksListsFreelas button {
+    padding: 12px 14px;
+    color: black;
+    border: 2px solid black;
+    letter-spacing: 1px;
+    position: relative;
+  }
+
+  .buttonsLinksListsFreelas button span {
+    position: relative;
+    z-index: 2;
+  }
+
+  .buttonsLinksListsFreelas button:after {
+    position: absolute;
+    content: "";
+    top: 0;
+    left: 0;
+    width: 0;
+    height: 100%;
+    background: rgb(83, 230, 27);
+    transition: all 0.35s;
+  }
+
+  .buttonsLinksListsFreelas button:hover {
+    color: #fff;
+    cursor: pointer;
+  }
+
+  .buttonsLinksListsFreelas button:hover:after {
+    width: 100%;
+  }
+
+  .buttonsLinksListsProjects {
+    padding-right: 10px;
+  }
+
+  .buttonsLinksListsProjects button {
+    padding: 12px 27px;
+    color: black;
+    border: 2px solid black;
+    letter-spacing: 1px;
+    position: relative;
+  }
+
+  .buttonsLinksListsProjects button span {
+    position: relative;
+    z-index: 2;
+  }
+
+  .buttonsLinksListsProjects button:after {
+    position: absolute;
+    content: "";
+    top: 0;
+    left: 0;
+    width: 0;
+    height: 100%;
+    background: rgb(27, 158, 245);
+    transition: all 0.35s;
+  }
+
+  .buttonsLinksListsProjects button:hover {
+    color: #fff;
+    cursor: pointer;
+  }
+
+  .buttonsLinksListsProjects button:hover:after {
+    width: 100%;
+  }
+
+  .buttonsLinksFormFreelas {
+    width: 20%;
+    justify-content: space-evenly;
+  }
+
+  .buttonsLinksFormFreelas button {
+    width: 200px;
+    padding: 12px 14px;
+    color: black;
+    border: 2px solid black;
+    letter-spacing: 1px;
+    position: relative;
+  }
+
+  .buttonsLinksFormFreelas button span {
+    position: relative;
+    z-index: 2;
+  }
+
+  .buttonsLinksFormFreelas button:after {
+    position: absolute;
+    content: "";
+    top: 0;
+    left: 0;
+    width: 0;
+    height: 100%;
+    background: rgb(83, 230, 27);
+    transition: all 0.35s;
+  }
+
+  .buttonsLinksFormFreelas button:hover {
+    color: #fff;
+    cursor: pointer;
+  }
+
+  .buttonsLinksFormFreelas button:hover:after {
+    width: 100%;
+  }
+
+  .buttonsLinksFormProjects button {
+    width: 200px;
+    padding: 12px 14px;
+    color: black;
+    border: 2px solid black;
+    letter-spacing: 1px;
+    position: relative;
+  }
+
+  .buttonsLinksFormProjects button span {
+    position: relative;
+    z-index: 2;
+  }
+
+  .buttonsLinksFormProjects button:after {
+    position: absolute;
+    content: "";
+    top: 0;
+    left: 0;
+    width: 0;
+    height: 100%;
+    background: rgb(27, 158, 245);
+    transition: all 0.35s;
+  }
+
+  .buttonsLinksFormProjects button:hover {
+    color: #fff;
+    cursor: pointer;
+  }
+
+  .buttonsLinksFormProjects button:hover:after {
+    width: 100%;
+  }
+}

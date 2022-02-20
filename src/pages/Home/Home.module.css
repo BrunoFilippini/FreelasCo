@@ -1,0 +1,158 @@
+@import url("https://fonts.googleapis.com/css?family=Poppins:900i");
+
+@import url("https://fonts.googleapis.com/css2?family=Caveat:wght@700&display=swap");
+
+@media screen and (min-width: 1200px) {
+  .bgColor {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-image: linear-gradient(
+      0deg,
+      hsl(0deg 0% 0%) 0%,
+      hsl(0deg 0% 30%) 0%,
+      hsl(0deg 0% 43%) 0%,
+      hsl(0deg 0% 52%) 2%,
+      hsl(0deg 0% 60%) 4%,
+      hsl(0deg 0% 67%) 8%,
+      hsl(0deg 0% 74%) 14%,
+      hsl(0deg 0% 80%) 23%,
+      hsl(0deg 0% 85%) 38%,
+      hsl(0deg 0% 90%) 70%,
+      hsl(0deg 0% 95%) 97%,
+      hsl(0deg 0% 100%) 100%
+    );
+  }
+
+  .logoAndimgBg {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .logoGigLand {
+    width: 30%;
+    margin-top: -150px;
+  }
+
+  .bgImg {
+    display: flex;
+    top: 0;
+    left: 0;
+    width: 40%;
+    background-repeat: no-repeat;
+  }
+
+  .buttons {
+    position: relative;
+    top: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-right: 9%;
+    padding-left: 7%;
+  }
+
+  /* remove underlinne dos links  */
+  :any-link {
+    text-decoration: none;
+  }
+
+  /* Button Freelancer */
+  .btnFreelancer {
+    background: rgb(83, 230, 27);
+    background: linear-gradient(
+      0deg,
+      rgba(83, 230, 27, 0) 0%,
+      rgba(234, 253, 45, 0) 100%
+    );
+    font-family: "Poppins", sans-serif;
+    font-size: 2rem;
+    padding: 1rem 4.4rem;
+    color: #000000;
+    text-decoration: none;
+    border: 2px solid rgb(83, 230, 27);
+    border-radius: 8px;
+    box-shadow: rgba(0, 0, 0, 0.45) 0px 25px 20px -20px;
+    position: relative;
+    overflow: hidden;
+    display: flex;
+  }
+
+  .btnFreelancer:hover {
+    box-shadow: 1px 1px 25px 10px rgba(117, 211, 29, 0.4);
+  }
+
+  .btnFreelancer:before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: -100%;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(
+      120deg,
+      transparent,
+      rgba(117, 211, 29),
+      transparent
+    );
+    transition: all 650ms;
+  }
+
+  .btnFreelancer:hover:before {
+    left: 100%;
+  }
+
+  /*  Button Emplyer */
+
+  .btnEmployer {
+    background: rgb(27, 158, 245);
+    background: linear-gradient(
+      0deg,
+      rgba(0, 151, 255, 0) 0%,
+      rgba(2, 252, 250, 0) 100%
+    );
+    font-family: "Poppins", sans-serif;
+    font-size: 2rem;
+    padding: 1rem 5.6rem;
+    color: #000000;
+    text-decoration: none;
+    border: 2px solid rgb(27, 158, 245);
+    border-radius: 8px;
+    box-shadow: rgba(0, 0, 0, 0.45) 0px 25px 20px -20px;
+    position: relative;
+    overflow: hidden;
+    display: flex;
+  }
+
+  .btnEmployer:hover {
+    box-shadow: 1px 1px 25px 10px rgba(57, 205, 250, 0.4);
+  }
+
+  .btnEmployer:before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: -100%;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(
+      120deg,
+      transparent,
+      rgba(57, 205, 250),
+      transparent
+    );
+    transition: all 650ms;
+  }
+
+  .btnEmployer:hover:before {
+    left: 100%;
+  }
+
+  .text p {
+    font-family: "Caveat", sans-serif;
+    font-size: 50px;
+    margin-bottom: 20px;
+  }
+}
