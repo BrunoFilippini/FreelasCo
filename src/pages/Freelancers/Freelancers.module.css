@@ -13,6 +13,12 @@
     flex-direction: column;
     align-items: center;
     justify-content: center;
+    background-image: linear-gradient(
+      0deg,
+      hsl(0deg 0% 6%) 14%,
+      hsl(344deg 0% 11%) 91%,
+      hsl(0deg 0% 15%) 101%
+    );
   }
 
   .titleFreelancers {

@@ -9,18 +9,9 @@
     height: 100%;
     background-image: linear-gradient(
       0deg,
-      hsl(0deg 0% 0%) 0%,
-      hsl(0deg 0% 30%) 0%,
-      hsl(0deg 0% 43%) 0%,
-      hsl(0deg 0% 52%) 2%,
-      hsl(0deg 0% 60%) 4%,
-      hsl(0deg 0% 67%) 8%,
-      hsl(0deg 0% 74%) 14%,
-      hsl(0deg 0% 80%) 23%,
-      hsl(0deg 0% 85%) 38%,
-      hsl(0deg 0% 90%) 70%,
-      hsl(0deg 0% 95%) 97%,
-      hsl(0deg 0% 100%) 100%
+      hsl(0deg 0% 6%) 14%,
+      hsl(344deg 0% 11%) 91%,
+      hsl(0deg 0% 15%) 101%
     );
   }
 
@@ -70,7 +61,9 @@
     font-family: "Poppins", sans-serif;
     font-size: 2rem;
     padding: 1rem 4.4rem;
-    color: #000000;
+    -webkit-text-fill-color: white;
+    -webkit-text-stroke-width: 2px;
+    -webkit-text-stroke-color: black;
     text-decoration: none;
     border: 2px solid rgb(83, 230, 27);
     border-radius: 8px;
@@ -104,7 +97,7 @@
     left: 100%;
   }
 
-  /*  Button Emplyer */
+  /*  Button Project */
 
   .btnProject {
     background: rgb(27, 158, 245);
@@ -116,7 +109,9 @@
     font-family: "Poppins", sans-serif;
     font-size: 2rem;
     padding: 1rem 5.6rem;
-    color: #000000;
+    -webkit-text-fill-color: white;
+    -webkit-text-stroke-width: 2px;
+    -webkit-text-stroke-color: black;
     text-decoration: none;
     border: 2px solid rgb(27, 158, 245);
     border-radius: 8px;
@@ -151,6 +146,7 @@
   }
 
   .text p {
+    color: white;
     font-family: "Caveat", sans-serif;
     font-size: 50px;
     margin-bottom: 20px;
