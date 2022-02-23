@@ -24,10 +24,6 @@ Technologies used were:
 
 [Click here](https://freelasco.netlify.app/)
 
-## Developers
-
-- [Bruno](https://www.linkedin.com/in/bruno-filippini/)
-
 ## Install
 
 Clone the repositorie and then execute the commands:
