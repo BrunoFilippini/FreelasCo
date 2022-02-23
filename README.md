@@ -1,6 +1,6 @@
 # Freelas Co
 
-Created to connect Freelaners and projects
+Created to connect Freelaners and Projects
 
 ## About the project
 
